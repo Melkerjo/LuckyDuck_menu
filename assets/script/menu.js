@@ -24,10 +24,17 @@ const data = JSON.parse(fileContent); // Omvandla texten till ett JavaScript-obj
         var pPrice = document.createElement("p");
         pPrice.classList.add("plist");
         pPrice.textContent = item.price;
+        
+        
 
         var pDescription = document.createElement("p");
         pDescription.classList.add("plist");
         pDescription.textContent = item.description.sv;
+
+        var button = document.createElement("button");
+        button.classList.add("buttonClass");
+        button.innerHTML = "Lägg i varukorg";
+        button.value = i;
         
 
 
@@ -35,6 +42,7 @@ const data = JSON.parse(fileContent); // Omvandla texten till ett JavaScript-obj
         newDiv.appendChild(h3Name);
         newDiv.appendChild(pPrice);
         newDiv.appendChild(pDescription);
+        newDiv.appendChild(button);
 
         i++;
         if (i % 2) {

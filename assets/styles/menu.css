@@ -138,3 +138,8 @@ body{
     height: 100%;
     background-color: rgb(245, 245, 245);
 }
+
+.buttonClass{
+    width: 100px;
+	height: 20px;
+}
